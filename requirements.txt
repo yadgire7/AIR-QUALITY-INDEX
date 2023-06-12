@@ -1,0 +1,7 @@
+requests
+pyspark
+pandas
+numpy
+matplotlib
+xgboost
+hopsworks
