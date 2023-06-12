@@ -1,0 +1,21 @@
+name: Run Feature Script
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  run_feature_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Run Feature Script
+        run: python feature_extraction.py  # Replace with the path to your feature script
