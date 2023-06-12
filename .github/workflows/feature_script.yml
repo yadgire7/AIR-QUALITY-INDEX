@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
+          
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
 
       - name: Run Feature Script
         run: python feature_extraction.py  # Replace with the path to your feature script
