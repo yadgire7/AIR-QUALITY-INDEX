@@ -5,3 +5,5 @@ numpy
 matplotlib
 xgboost
 hopsworks
+streamlit
+random
