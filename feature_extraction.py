@@ -12,8 +12,8 @@ import hopsworks
 import xgboost
 import streamlit as st
 
-os.environ['PYSPARK_PYTHON'] = sys.executable
-os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
+# os.environ['PYSPARK_PYTHON'] = sys.executable
+# os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 sc = SparkContext.getOrCreate()
 spark = SparkSession.builder.config(
     "spark.sql.shuffle.partitions", "400").getOrCreate()
